@@ -34,7 +34,7 @@ export class LoginComponent implements OnInit {
       const email = this.loginForm.get('email')!.value;
       const password = this.loginForm.get('password')!.value;
       
-      const apiUrl = 'https://github.com/vyshnavi880/TODOAPP-BE/api/todos/login';
+      const apiUrl = 'https://todoapp-be-o97u.onrender.com/api/todos/login';
 
       this.http.post<any>(apiUrl, { email, password }).subscribe(
         response => {

@@ -46,7 +46,7 @@ export class RegisterComponent {
       const headers = new HttpHeaders();
       // Don't set Content-Type, let Angular set it automatically with FormData
   
-      this.http.post<any>('https://github.com/vyshnavi880/TODOAPP-BE/api/todos/createuser', formData, { headers }).subscribe(
+      this.http.post<any>('https://todoapp-be-o97u.onrender.com/api/todos/createuser', formData, { headers }).subscribe(
         response => {
           if (response.status === 200) {
             localStorage.setItem('accessToken', response.accessToken);

@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
   // Fetch user data
   fetchUserData(token: string) {
     this.http
-      .get('http://localhost:8000/api/todos/getuser', {
+      .get(' https://github.com/vyshnavi880/TODOAPP-BE/api/todos/getuser', {
         headers: { Authorization: `Bearer ${token}` }
       })
       .subscribe({
